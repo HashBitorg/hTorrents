@@ -509,6 +509,11 @@ Here you can interact with the HBIT Blockchain, once logged in you can transact 
 <script type="text/javascript" src="assets/js/jquery.qrcode.min.js"></script>
 <script src="scripts/hs.megamenu.js"></script>
 <script>
+$.getJSON('https://hashbit.org/hbitgetnodes', function(addr) { 
+node = addr.ip;
+$.cookie('node', node, { expires: 365, path: '/', secure: true });
+});
+
 document.getElementById("curryear").innerHTML = new Date().getFullYear();
 
 bodybg = $.cookie("bodystyle");
