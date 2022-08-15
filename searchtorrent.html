@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>HBIT Blockchain | Searching</title>
+<meta name="title" content="HBIT Blockchain - Searching">
+<meta name="description" content="HashBit Blockchain, HBIT, Future of Money and Crypto is here. Open your Wallet and Join the Community.">
+<meta name="keywords" content="hashbit, hbit, blockchain, wallet, assets, exchange, messenger, chat, bitcoin, btc">
+<meta name="author" content="HashBit.org">
+<meta name="copyright" content="2021">
+<meta http-equiv="Reply-to" content="support@hashbit.org">
+<meta http-equiv="content-language" content="EN">
+<meta http-equiv="Content-Type" content="text/html; iso-8859-1">
+<meta name="robots" content="INDEX,FOLLOW">
+<meta name="creation_Date" content="05/07/2021">
+<meta name="revisit-after" content="7 days">
+<link rel="shortcut icon" href="./images/favicon.png">
+<link rel="stylesheet" href="assets/css/design.css">
+
+
+</head>
+
+<body id="body" class="dark-mode">
+<script src="./assets/js/bundle.js?ver=2.4.0"></script>
+<script src="./assets/js/jquery.cookie-1.4.1.min.js"></script>
+
+<script src="scripts/jquery-ui.min.js"></script>
+<script src="scripts/jquery-migrate.min.js"></script>
+<script src="scripts/popper.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script>
+const queryStringorder = window.location.search;
+const urlParamsorder = new URLSearchParams(queryStringorder);
+const searching = urlParamsorder.get('q');
+
+var unsanitizedHTML = searching;
+var element = document.createElement('div');
+element.innerText = unsanitizedHTML;
+var sanitizedHTML = element.innerHTML;
+
+let text = sanitizedHTML;
+
+if (text.length > 0) {
+window.location.href = "htorrents.html?tag="+sanitizedHTML+"";
+} else {
+window.location.href = "nothing.html";
+}
+
+
+
+
+
+</script>
+</body>
+
+</html>

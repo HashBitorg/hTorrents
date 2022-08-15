@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>HBIT Blockchain | Connect to Wallet</title>
+<meta name="title" content="HBIT Blockchain - Connect to Wallet">
+<meta name="description" content="HashBit Blockchain, HBIT, Future of Money and Crypto is here. Open your Wallet and Join the Community.">
+<meta name="keywords" content="hashbit, hbit, blockchain, wallet, assets, exchange, messenger, chat, bitcoin, btc">
+<meta name="author" content="HashBit.org">
+<meta name="copyright" content="2021">
+<meta http-equiv="Reply-to" content="support@hashbit.org">
+<meta http-equiv="content-language" content="EN">
+<meta http-equiv="Content-Type" content="text/html; iso-8859-1">
+<meta name="robots" content="INDEX,FOLLOW">
+<meta name="creation_Date" content="05/07/2021">
+<meta name="revisit-after" content="7 days">
+
+<link rel="shortcut icon" href="./images/favicon.png">
+<link rel="stylesheet" href="assets/css/design.css">
+</head>
+
+<body id="body" class="dark-mode">
+<div class="wrapper">
+<main id="content" role="main">
+<div class="container space-bottom-2">
+<div class="card">
+<div id="ContentPlaceHolder1_maintable" class="card-body">
+<div>
+<p align="center"><img id="logo-header" width="160" src="images/hbit_blockchain_logo_light.png" alt="HBIT Logo"><br>
+<span class="text-secondary">Height: <span id="blocks"></span> Blocks</span> <span id="status"></span></p>
+<h2 class="h3 text-primary font-weight-normal mb-0">Welcome <span class="font-weight-semi-bold">back</span> <span id="bodybgstyle"</span></h2>
+<p>Login to your Wallet</p>
+</div>
+<div class="js-form-message form-group u-has-success">
+
+
+                        <div class="form-group">
+                            <div class="form-label-group">
+                                <label class="form-label" for="password"><em class="icon ni ni-shield-check-fill"></em> Your PassPhrase</label>
+                            </div>
+                            <div class="form-control-wrap">
+                                <a tabindex="-1" href="#" class="form-icon form-icon-right passcode-switch" data-target="hbitkey">
+                                    <em class="passcode-icon icon-show icon ni ni-eye"></em>
+                                    <em class="passcode-icon icon-hide icon ni ni-eye-off"></em>
+                                </a>
+                                <input type="password" class="form-control form-control-sm" placeholder="Your Passphrase" id="hbitkey" value="" required>
+                            </div>
+				  </div>
+                                                    <input type="hidden" value="" id="currentnode">
+                                                    <input type="hidden" value="" id="localnode">
+                        <div class="form-group">
+										   <div class="bg-light">
+										   <span id="address"></span>
+										   <span id="privkey"></span>										   </div>
+						<p><em class="icon ni ni-package-fill"></em> Blockchain Status: <span id="checknode"></span></p>
+
+                            <button id="connect" class="btn btn-lg btn-primary btn-block">Connect</button>
+                        </div>
+                                            <div class="mt-4 text-center">
+                                                <div class="signin-other-title">
+                                                    <h5 class="fs-13 mb-4 title">Don't have a Wallet? Create New One:</h5>
+                                                </div>
+                                                <div>
+													<button type="button" onClick="createwallet()" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Click to Generate New Wallet." class="btn btn-outline-success position-relative"><em class="icon ni ni-wallet-fill"></em> <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">create </span></button>
+<hr class="opacity-md">
+<div class="row justify-content-between align-items-center font-size-1">
+
+<div class="col-md-12">
+<ul class="list-inline mb-0">
+<li class="list-inline-item">
+<a class="btn btn-sm btn-icon btn-soft-light btn-pill" href="https://www.facebook.com/hashbitorg/" rel="nofollow noopener" target="_blank" data-toggle="tooltip" data-placement="top" title="Facebook" data-original-title="Facebook">
+<i class="ni ni-facebook-f btn-icon__inner h3"></i></a></li>
+<li class="list-inline-item">
+<a class="btn btn-sm btn-icon btn-soft-light btn-pill" href="https://twitter.com/HashBitorg" rel="nofollow noopener" target="_blank" data-toggle="tooltip" data-placement="top" title="Twitter" data-original-title="Twitter">
+<i class="ni ni-twitter btn-icon__inner h3"></i></a></li>
+<li class="list-inline-item">
+<a class="btn btn-sm btn-icon btn-soft-light btn-pill" href="https://www.instagram.com/hashbitorg/" rel="nofollow noopener" target="_blank" data-toggle="tooltip" data-placement="top" title="Instagram" data-original-title="Instagram">
+<i class="ni ni-instagram btn-icon__inner h3"></i></a></li>
+<li class="list-inline-item">
+<a class="btn btn-sm btn-icon btn-soft-light btn-pill" href="https://t.me/hashbitofficial/" rel="nofollow noopener" target="_blank" data-toggle="tooltip" data-placement="top" title="Telegram" data-original-title="Telegram">
+<i class="ni ni-telegram btn-icon__inner h3"></i></a></li>
+<li class="list-inline-item">
+<a class="btn btn-sm btn-icon btn-soft-light btn-pill" href="https://medium.com/@hashbitblockchain" rel="nofollow noopener" target="_blank" data-toggle="tooltip" data-placement="top" title="Medium" data-original-title="Medium">
+<i class="ni ni-medium btn-icon__inner h3"></i></a></li>
+<li class="list-inline-item">
+<a class="btn btn-sm btn-icon btn-soft-light btn-pill" href="https://www.youtube.com/channel/UC6s8POT8-n3-h9ebxH630cg" rel="nofollow noopener" target="_blank" data-toggle="tooltip" data-placement="top" title="YouTube" data-original-title="YouTube">
+<i class="ni ni-youtube btn-icon__inner h3"></i></a></li>
+<li class="list-inline-item">
+<a class="btn btn-sm btn-icon btn-soft-light btn-pill" href="https://bitcointalk.org/index.php?topic=5339187" rel="nofollow noopener" target="_blank" data-toggle="tooltip" data-placement="top" title="BitcoinTalk" data-original-title="BitcoinTalk">
+<i class="ni ni-hangout btn-icon__inner h3"></i></a></li>
+<li class="list-inline-item">
+<a class="btn btn-sm btn-icon btn-soft-light btn-pill" href="https://github.com/HashBitorg" rel="nofollow noopener" target="_blank" data-toggle="tooltip" data-placement="top" title="GitHub" data-original-title="GitHub">
+<i class="ni ni-github-circle btn-icon__inner h3"></i></a></li>
+<li class="list-inline-item">
+<a class="btn btn-sm btn-icon btn-soft-light btn-pill" href="https://play.google.com/store/apps/dev?id=4846917808643275474" rel="nofollow noopener" target="_blank" data-toggle="tooltip" data-placement="top" title="PlayStore" data-original-title="PlayStore">
+<i class="ni ni-google-play-store btn-icon__inner h3"></i></a></li>
+
+</ul>
+</div>
+
+<div class="col-md-12">
+<p class="mb-0 text-default">HashBit Blockchain © 2021/<span id="curryear"></span> <span class="mx-1">|</span> <em class="icon ni ni-box"></em> Blockchain <span id="newversion"></span></p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+</main>
+
+<a class="js-go-to u-go-to animated js-animation-was-fired slideInUp" href="#" data-position="{&quot;bottom&quot;: 20, &quot;right&quot;: 15 }" data-type="fixed" data-offset-top="400" data-compensation="#header" data-show-effect="slideInUp" data-hide-effect="slideOutDown" style="display: inline-block; position: fixed; bottom: 20px; right: 15px;">
+<em class="ni ni-arrow-up u-go-to__inner h2"></em></a>
+<script src="assets/js/bundle.js?ver=2.4.0"></script>
+<script src="assets/js/scripts.js?ver=2.4.0"></script>
+<script src="assets/js/hbitjs.js"></script>
+<script src="assets/js/jquery.cookie-1.4.1.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.qrcode.min.js"></script>
+<script>
+document.getElementById("curryear").innerHTML = new Date().getFullYear();
+//Dark Light Mode Start
+bodybg = $.cookie("bodystyle");
+if (!bodybg) {
+}
+else {
+$("body").attr("class", bodybg);
+}
+if (bodybg == 'light-mode') {
+$('#bodybgstyle').html('<button onclick="bodystyle()" type="button" class="btn btn-sm btn-icon btn-soft-light"><em class="icon ni ni-moon text-dark"></em></button>'); 
+}
+else if (bodybg == 'dark-mode') {
+$('#bodybgstyle').html('<button onclick="bodystylelight()" type="button" class="btn btn-sm btn-icon btn-soft-light"><em class="icon ni ni-sun text-light"></em></button>'); 
+} else {
+$('#bodybgstyle').html('<button onclick="bodystylelight()" type="button" class="btn btn-sm btn-icon btn-soft-light"><em class="icon ni ni-sun text-light"></em></button>'); 
+}
+function bodystyle() {
+$("body").attr("class", "dark-mode")
+$.cookie('bodystyle', null, { expires: -1, path: '/', secure: true });
+$.cookie('bodystyle', 'dark-mode', { expires: 365, path: '/', secure: true });
+$('#bodybgstyle').html('<button onclick="bodystylelight()" type="button" class="btn btn-sm btn-icon btn-soft-light"><em class="icon ni ni-sun text-light"></em></button>'); 
+}
+function bodystylelight() {
+$("body").attr("class", "light-mode")
+$.cookie('bodystyle', null, { expires: -1, path: '/', secure: true });
+$.cookie('bodystyle', 'light-mode', { expires: 365, path: '/', secure: true });
+$('#bodybgstyle').html('<button onclick="bodystyle()" type="button" class="btn btn-sm btn-icon btn-soft-light"><em class="icon ni ni-moon text-dark"></em></button>'); 
+}
+//Dark Light Mode End
+
+$.getJSON('https://hashbit.org/hbitprice', function(price) { 
+hbitusd = price.price;
+$('#hbitprice').html(hbitusd); 
+});
+
+hbitkey = $.cookie("hbitkey");
+if (!hbitkey) {
+} else {  
+hbitkey = $.cookie("hbitkey");
+$('#hbitkey').val(hbitkey);
+var acc = hbitjs.secretPhraseToAccountId(hbitkey);
+}
+
+$.getJSON('https://hashbit.org/hbitgetnodes', function(addr) { 
+var x = addr.ip;
+node = x;
+$('#currentnode').val(node);
+$.cookie('node', null, { expires: -1, path: '/', secure: true });
+$.cookie('node', node, { expires: 365, path: '/', secure: true });
+checkNode()
+});
+
+node = $.cookie("node");
+$('#currentnode').val(node);
+
+function checkNode() {
+$('#connect').prop('disabled', true);
+$('#checknode').html('<span class="text-warning"><em class="icon ni ni-wifi-off"> Checking Network</span>');
+var x = node;
+if (!x) {
+x = $('#currentnode').val();
+} 
+
+$.getJSON(x+'/hbit?requestType=getTime', function(check) { 
+checknode = check.time;
+if(checknode = '') {
+$('#checknode').html('<span class="text-danger"><em class="icon ni ni-wifi-off"> OffLine</span>');
+} else {
+$('#checknode').html('<span class="text-success"><em class="icon ni ni-wifi"> OnLine</span>');
+$('#connect').prop('disabled', false);
+}
+});
+}
+$(document).ready( function() {
+checkNode();
+});
+
+
+//OFFICIAL NODE SELECTION
+$.getJSON(node +'/hbit?requestType=getBlockchainStatus', function(empot) {
+$('#blocks').html(new Intl.NumberFormat('en-EN').format(empot.numberOfBlocks)); 
+if (empot.blockchainState == 'UP_TO_DATE'){
+$('#status').html('<span class="text-success small">UP_TO_DATE</span>'); 
+} else if (empot.blockchainState == 'DOWNLOADING'){
+Swal.fire('Warning...', 'Node Download Blockchain, wait until is UP TO DATE!', 'warning');
+$('#status').html('<span class="text-warning small">DOWNLOADING</span>'); 
+} else if (empot.blockchainState == 'FORK'){
+Swal.fire('FORK...', 'Node is a Fork, Close and Re-Open Software, or Re-Download Blockchain.', 'error');
+$('#status').html('<span class="text-danger small">FORK!</span>'); 
+} else{
+Swal.fire('OFFLINE', 'Node is OffLine, Check HBIT Software is Running.', 'error');
+$('#status').html('<span class="text-danger small">OFFLINE</span>'); 
+
+}
+}); 
+//OFFICIAL NODE SELECTION
+
+
+//Account Loggedin Section End
+//VERSION CHECK
+$.getJSON(node +'/version.txt', function(empot) {
+$.getJSON('https://hashbit.org/version', function(empo) {
+localversion = empot.version;
+latestversion = empo.version;
+if (localversion == latestversion){
+$('#newversion').html('v:'+localversion+''); 
+} else {
+Swal.fire('New Version!', 'New Version is available to download! Update your software to get latest updates.', 'warning');
+$('#newversion').html('<span class="text-warning"><em class="icon ni ni-eye-alt"></em>Blockchain v:'+latestversion+' <a href="https://github.com/HashBitorg/HBITChain/releases" target="_blank" class="btn btn-sm btn-warning">Download Update</a></span>'); 
+
+}
+}); 
+}); 
+//VERSION CHECK
+
+$('#connect').click(function(){ Connect(); return false; });
+function Connect() {
+var privatekey = document.getElementById("hbitkey").value;
+var node = $.cookie("node");
+if (!privatekey || !node) {
+Swal.fire('Error...', 'Passphrase is required to enter your Wallet.', 'error');
+} else {
+$.cookie('hbitkey', null, { expires: -1, path: '/', secure: true });
+$.cookie('hbitkey', privatekey, { expires: 365, path: '/', secure: true });
+$.cookie('node', node, { expires: 365, path: '/', secure: true });
+var acc = hbitjs.secretPhraseToAccountId(privatekey);
+window.location.href = "index.html";
+}
+} 
+//Account Loggedin Section End
+
+function makeid(length) {
+    var result           = [];
+    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!?';
+    var charactersLength = characters.length;
+    for ( var i = 0; i < length; i++ ) {
+      result.push(characters.charAt(Math.floor(Math.random() * 
+ charactersLength)));
+   }
+   return result.join('');
+}
+
+function createwallet() {
+var privatekey = makeid(64);
+var acc = hbitjs.secretPhraseToAccountId(privatekey);
+$("#address").html('<p><em class="icon ni ni-wallet-saving"></em> Your Public Address:<br><b class="text-primary" id="copyaddr">' +acc+'</b> <span class="text-warning clipboard-init" data-clipboard-target="#copyaddr" data-success="Copied" data-text="Copy Link"><em class="clipboard-icon icon ni ni-copy"></em> <span class="clipboard-text">Copy</span></span></p>');
+$("#privkey").html('<div class="justify-content-between"><div class="p-2"><em class="icon ni ni-lock-alt-fill"></em> Your Passphrase:<br><div class="form-control-wrap"><div class="form-clip clipboard-init" data-clipboard-target="#copyprivk" data-success="Copied" data-text="Copy Link"><em class="clipboard-icon icon ni ni-copy"></em> <span class="clipboard-text">Copy</span></div><input type="text" class="form-control copy-text" id="copyprivk" value="'+privatekey+'" maxlength="128"></div></div></div>');
+
+$("#hbitkey").val(privatekey);
+$.cookie('hbitkey', privatekey, { expires: 365, path: '/', secure: true });
+Swal.fire('Congrats...', 'HBIT Wallet Created! Save your passphrase in a safe place before connect!', 'success');
+}
+</script>
+</body>
+</html>
